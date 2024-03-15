@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link src="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body fixed-top custom-nav-scroll"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="/index.html">
+                <img class="rounded-circle" src="src/app-logo.jpg" alt="app-logo" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#services-section">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#about-section">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=919310338684">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--FORM-->
+    <div class="container my-4">
+        <div class="py-5 text-center">
+            <!-- <img class="d-block mx-auto mb-4 rounded-circle" src="/src/app-logo.jpg" alt="" width="72" height="57"> -->
+            <h2>Get in Touch</h2>
+            <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form
+                group
+                has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-5">
+            <div class="">
+                <h4 class="mb-3">General Information</h4>
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name*</label>
+                            <input type="text" class="form-control" id="firstName" required="required">
+                            <div class="invalid-feedback">
+                                First name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email*
+                            </label>
+                            <input type="email" required="required" class="form-control" id="email"
+                                placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="phnNo" class="form-label">Phone Number*
+                            </label>
+                            <input type="text" maxlength="10" minlength="10" required="required" class="form-control"
+                                id="phnNo" placeholder="XXXXXXXXXX">
+                            <div class="invalid-feedback">
+                                Please enter a valid phone number.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Country*</label>
+                            <input type="text" class="form-control" id="country" required="required">
+                            <div class="invalid-feedback">
+                                Country required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">State*</label>
+                            <input type="text" class="form-control" id="state" required="required">
+                            <div class="invalid-feedback">
+                                Enter your State.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Pincode*</label>
+                            <input type="number" class="form-control" id="zip" placeholder="" required="required">
+                            <div class="invalid-feedback">
+                                Pincode code required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Information for Medical guidence</h4>
+                    <!--TODO: Add More Fields-->
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <label for="height" class="form-label">Height (in Centemeters)</label>
+                            <input type="number" class="form-control" id="height" placeholder="180">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="weight" class="form-label">Weight (in Kilograms)</label>
+                            <input type="number" class="form-control" id="weight" placeholder="66">
+                        </div>
+
+                        <!--TODO: Show this dropdown only if user selects for dietplan-->
+                        <div class="col-md-5">
+                            <label for="diet-plan-dropdown" class="form-label">Diet Plans</label>
+                            <select class="form-select" id="diet-plan-dropdown">
+                                <option>None</option>
+                                <option>Diet plan for OOsteoporosis</option>
+                                <option>Diet plan for CPOD</option>
+                                <option>Diet plan Menopuse</option>
+                                <option>Diet plan for Q Fever</option>
+                                <option>Diet plan for Reflux Deasease</option>
+                                <option>Diet plan for Snoring</option>
+                                <option>Diet plan for Thyroid</option>
+                                <option>Diet plan for UTI</option>
+                                <option>Diet plan for Vertigo</option>
+                                <option>Diet plan for Wheat Allergy</option>
+                                <option>Diet plan for Xerostomea</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="form-check" class="form-label">Services</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="services-doctor-checkbox">
+                                <label class="form-check-label" for="services-doctor-checkbox">
+                                    Consult with Doctor
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value=""
+                                    id="services-laboratory-checkbox">
+                                <label class="form-check-label" for="services-laboratory-checkbox">
+                                    Test through our laboratory
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="input-group-text">Any Medical History we should be aware of?</span>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"
+                                    id="message-textarea"> </textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!--TODO: Show this alert when user submitted the form successfully-->
+                    <div class="alert alert-success my-2 hidden" role="alert" id="success-form-alert">
+                        Thank you for your submission. Our team will contact you within 24 hours.
+                    </div>
+
+                    <div class="hidden progress my-2" role="progressbar" aria-label="Info striped example"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="form-progress-bar">
+                        <div class="progress-bar progress-bar-striped bg-info" style="width: 70%"></div>
+                    </div>
+
+                    <button id="form-submit-button" class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4 featurette-divider mx-5">
+
+    <!--FOOTER-->
+    <footer>
+        <div class="bg-green-100">
+            <p class="text-center pt-3 mb-0 lin" id="ln"><a href="https://www.linkedin.com/in/paras-bhatt-4911a8181/"
+                    style="text-decoration:none;" class="linkedin"><i class="fab fa-linkedin-in text-gray-600"
+                        style="font-size:20px;"></i></a>
+            </p>
+
+            <div class="container mx-auto  px-5 text-center">
+                <p class="text-gray-500 text-sm text-center sm:text-left"
+                    style="font-family: 'Merriweather', serif; font-weight:bolder; color: gray" ;> Copyright
+                    Since &copy;
+                    2024, <a style="text-decoration:none; color: gray; font-weight: bolder;color:gray">ShriHarsha
+                        Healthcare
+                    </a>
+                    <!-- <a href="https://www.linkedin.com/in/paras-bhatt-4911a8181/" style="text-decoration:none"
+                      rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank" style="font-family: 'Merriweather', serif;">@Paras Bhatt </a> -->
+
+
+                    <br> <B style="color: gray;">ALL RIGHTS RESERVED </B>| <a class="privacy"
+                        href="privacypolicy.html">PRIVACY POLICY</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

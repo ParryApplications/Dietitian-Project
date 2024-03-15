@@ -1,0 +1,481 @@
+<!-- https://source.unsplash.com/1400x400/?dietitian -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--TODO: SEO META TAGS-->
+    <title>First WebApp Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link src="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body fixed-top custom-nav-scroll"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img class="rounded-circle" src="src/app-logo.jpg" alt="app-logo" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services-section">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=919310338684">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carousel(Slider)-->
+    <main class="mt-5">
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="src/slider-image-1.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Welcome to our Website</h5>
+                            <p>Medical Healthcare Facilities</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/slider-image-2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Laboratory Test</h5>
+                            <p>Tied up with affordable laboratories</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/slider-image-3.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Consult With Professional Doctors</h5>
+                            <p>Highly Qualified Medical Care</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- <div class="my-2 mx-5 marquee-div">
+            <div class="title">
+                <h5 class="badge text-bg-primary">Upcoming Plans:</h5>
+            </div>
+
+            <div class="marquee-div">
+                <pre
+                    class="marquee-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In assumenda, aliquam sit ea enim repellendus aspernatur possimus dolor similique eos eaque mollitia quos quas quibusdam, magni suscipit, doloremque illum ratione!</pre>
+            </div>
+        </div> -->
+
+        <hr class=" my-4 featurette-divider mx-5" id="services-section">
+
+        <!--SERVICES-->
+        <section class="mx-4">
+            <h1 class="text-center display-6 bg-light">Services</h1>
+            <div class="row" style="padding: 10px;">
+
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">Services</strong>
+                            <h3 class="mb-0">Dietitian Consult</h3>
+
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <a href="/form.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                                Intrested?
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" src="src/services-thumbnail-1.jpg" width="200" height="250"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">Services</strong>
+                            <h3 class="mb-0">Doctor Consult</h3>
+
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <a href="/form.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                                Intrested?
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" src="src/services-thumbnail-2.jpg" width="200" height="250"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">Services</strong>
+                            <h3 class="mb-0">Laboratory Consult</h3>
+
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <a href="/form.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                                Intrested?
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" src="src/services-thumbnail-3.jpg" width="200" height="250"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" />
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <hr class=" my-2 featurette-divider mx-5" id="about-section">
+
+        <!--About-->
+        <section class="my-4 mx-2" style="text-align: center;">
+            <h1 class="text-center display-6 bg-light">About Us</h1>
+            <div class="container marketing">
+                <div class=" row featurette d-flex justify-content-center align-items-center my-2">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                                class="text-body-secondary">It’ll blow your mind.</span></h2>
+                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some
+                            exciting
+                            prose here.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400"
+                            src="https://source.unsplash.com/400x400/?dietitian,medical,healthcare,laboratory"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
+                                class="text-body-secondary">See for yourself.</span></h2>
+                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
+                            of
+                            how
+                            this layout would work with some actual real-world content in place.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400"
+                            src="https://source.unsplash.com/400x400/?dietitian,medical,laboratory"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
+                                class="text-body-secondary">See for yourself.</span></h2>
+                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
+                            of
+                            how
+                            this layout would work with some actual real-world content in place.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400"
+                            src="https://source.unsplash.com/400x400/?dietitian,healthcare,laboratory"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
+                                class="text-body-secondary">See for yourself.</span></h2>
+                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
+                            of
+                            how
+                            this layout would work with some actual real-world content in place.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400"
+                            src="https://source.unsplash.com/400x400/?medical,healthcare,laboratory"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        </img>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-4 featurette-divider mx-5">
+
+        <!--DOCTORS SECTION-->
+        <!-- <section class="my-4 mx-2"> -->
+        <h1 class="display-6 text-center bg-light">Qualified Dietitian</h1>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                    <img class="bd-placeholder-img rounded-circle" src="src/doctor-1.jpg" width="140" height="140"
+                        focusable="false">
+                    </img>
+                    <h2 class="fw-normal">Heading</h2>
+                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+                        fuga, praesentium dicta nulla cumque ad minima unde cupiditate, vero deserunt eos aliquid
+                        nobis pariatur quam quasi iste reprehenderit sequi quaerat!</p>
+                </div>
+                <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                    <img class="bd-placeholder-img rounded-circle" src="src/doctor-2.jpg" width="140" height="140"
+                        focusable="false">
+                    </img>
+                    <h2 class="fw-normal">Heading</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+                        corporis non pariatur quam doloribus omnis inventore magni odit autem quaerat ducimus
+                        cupiditate, repellendus error corrupti velit saepe eligendi et deserunt?</p>
+                </div>
+                <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                    <img class="bd-placeholder-img rounded-circle" src="src/doctor-3.jpg" width="140" height="140"
+                        focusable="false">
+                    </img>
+                    <h2 class="fw-normal">Heading</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam nobis
+                        aspernatur deserunt laboriosam fuga alias molestias placeat accusamus officia excepturi nisi
+                        qui aut, blanditiis itaque beatae sed. Rem, fugiat!</p>
+                </div>
+                <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                    <img class="bd-placeholder-img rounded-circle" src="src/doctor-3.jpg" width="140" height="140"
+                        focusable="false">
+                    </img>
+                    <h2 class="fw-normal">Heading</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam nobis
+                        aspernatur deserunt laboriosam fuga alias molestias placeat accusamus officia excepturi nisi
+                        qui aut, blanditiis itaque beatae sed. Rem, fugiat!</p>
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+
+        <hr class="my-4 featurette-divider mx-5">
+
+        <!--DOCTORS SECTION-->
+        <section class="my-4 mx-2">
+            <h1 class="display-6 text-center bg-light">Qualified Doctors</h1>
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                        <img class="bd-placeholder-img rounded-circle" src="src/doctor-1.jpg" width="140" height="140"
+                            focusable="false">
+                        </img>
+                        <h2 class="fw-normal">Heading</h2>
+                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+                            fuga, praesentium dicta nulla cumque ad minima unde cupiditate, vero deserunt eos aliquid
+                            nobis pariatur quam quasi iste reprehenderit sequi quaerat!</p>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                        <img class="bd-placeholder-img rounded-circle" src="src/doctor-2.jpg" width="140" height="140"
+                            focusable="false">
+                        </img>
+                        <h2 class="fw-normal">Heading</h2>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+                            corporis non pariatur quam doloribus omnis inventore magni odit autem quaerat ducimus
+                            cupiditate, repellendus error corrupti velit saepe eligendi et deserunt?</p>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                        <img class="bd-placeholder-img rounded-circle" src="src/doctor-3.jpg" width="140" height="140"
+                            focusable="false">
+                        </img>
+                        <h2 class="fw-normal">Heading</h2>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam nobis
+                            aspernatur deserunt laboriosam fuga alias molestias placeat accusamus officia excepturi nisi
+                            qui aut, blanditiis itaque beatae sed. Rem, fugiat!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="my-4 featurette-divider mx-5">
+
+        <!--DOCTORS SECTION-->
+        <section class="my-4 mx-2">
+            <h1 class="display-6 text-center bg-light">Testing Laboratory</h1>
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                        <img class="bd-placeholder-img rounded-circle" src="src/doctor-1.jpg" width="140" height="140"
+                            focusable="false">
+                        </img>
+                        <h2 class="fw-normal">Heading</h2>
+                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+                            fuga, praesentium dicta nulla cumque ad minima unde cupiditate, vero deserunt eos aliquid
+                            nobis pariatur quam quasi iste reprehenderit sequi quaerat!</p>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                        <img class="bd-placeholder-img rounded-circle" src="src/doctor-2.jpg" width="140" height="140"
+                            focusable="false">
+                        </img>
+                        <h2 class="fw-normal">Heading</h2>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+                            corporis non pariatur quam doloribus omnis inventore magni odit autem quaerat ducimus
+                            cupiditate, repellendus error corrupti velit saepe eligendi et deserunt?</p>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                        <img class="bd-placeholder-img rounded-circle" src="src/doctor-3.jpg" width="140" height="140"
+                            focusable="false">
+                        </img>
+                        <h2 class="fw-normal">Heading</h2>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam nobis
+                            aspernatur deserunt laboriosam fuga alias molestias placeat accusamus officia excepturi nisi
+                            qui aut, blanditiis itaque beatae sed. Rem, fugiat!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--FOOTER-->
+
+        <!-- <section>
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                            <img class="bi rounded-circle" src="src/app-logo.jpg" width="30" height="24" />
+                        </a>
+                        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 FitnessFreak, Inc</span>
+                    </div>
+
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </footer>
+            </div>
+        </section> -->
+
+        <hr class="my-4 featurette-divider mx-5">
+
+        <!--UPCOMING PLANS-->
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <div class="card upcoming-plan">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title">Our Upcoming Plans</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h6 class="plan-title">Plan 1</h6>
+                                <p class="plan-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    assumenda, aliquam sit ea enim repellendus aspernatur possimus dolor similique eos
+                                    eaque mollitia quos quas quibusdam, magni suscipit, doloremque illum ratione!</p>
+                            </div>
+                            <div class="plan">
+                                <h6 class="plan-title">Plan 2</h6>
+                                <p class="plan-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    assumenda, aliquam sit ea enim repellendus aspernatur possimus dolor similique eos
+                                    eaque mollitia quos quas quibusdam, magni suscipit, doloremque illum ratione!</p>
+                            </div>
+                            <!-- Add more plans as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4 featurette-divider mx-5">
+
+        <footer>
+            <div class="bg-green-100">
+                <p class="text-center pt-3 mb-0 lin" id="ln"><a
+                        href="https://www.linkedin.com/in/paras-bhatt-4911a8181/" style="text-decoration:none;"
+                        class="linkedin"><i class="fab fa-linkedin-in text-gray-600" style="font-size:20px;"></i></a>
+                </p>
+
+                <div class="container mx-auto  px-5 text-center">
+                    <p class="text-gray-500 text-sm text-center sm:text-left"
+                        style="font-family: 'Merriweather', serif; font-weight:bolder; color: gray" ;> Copyright
+                        Since &copy;
+                        2024, <a style="text-decoration:none; color: gray; font-weight: bolder;color:gray">ShriHarsha
+                            Healthcare
+                        </a>
+                        <!-- <a href="https://www.linkedin.com/in/paras-bhatt-4911a8181/" style="text-decoration:none"
+                          rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank" style="font-family: 'Merriweather', serif;">@Paras Bhatt </a> -->
+
+
+                        <br> <B style="color: gray;">ALL RIGHTS RESERVED </B>| <a class="privacy"
+                            href="privacypolicy.html">PRIVACY POLICY</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
