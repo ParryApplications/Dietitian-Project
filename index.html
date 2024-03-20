@@ -9,7 +9,7 @@
     <!--TODO: SEO META TAGS-->
     <title>ShriHarsha Healthcare</title>
     <meta name="description"
-        content="ShriHarsh Health care is a form based service through which user can get connect with the relevant people for particular services.">
+        content="ShriHarsh Health Care takes pride in being at the forefront of nutrition, dedicated to empowering individuals to reach their health aspirations. Through personalized nutrition plans and lifestyle guidance, we strive to foster optimal wellness and vitality.">
     <meta name=”robots” content="index, follow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -45,13 +45,37 @@
                         <a class="nav-link" href="#about-section">About</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=919310338684">Contact Us</a>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="/bolgs.html">Blogs</a>
+                    </li> -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span style="padding-left: 5px; color: darkgreen;font-weight: bold;">&#9990</span>
+                                    <a class="dropdown-item"
+                                        href="https://api.whatsapp.com/send?phone=919310338684">+91-9310338684</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span style="padding-left: 5px; color: darkgreen;font-weight: bold;">&#9990</span>
+                                    <a class="dropdown-item"
+                                        href="https://api.whatsapp.com/send?phone=9711445156">+91-9711445156</a>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!--Carousel(Slider)-->
     <main class="mt-5">
@@ -64,28 +88,37 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="src/slider-image-1.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <div class="carousel-caption d-none d-md-block">
                             <h5>Welcome to our Website</h5>
                             <p>Medical Healthcare Facilities</p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="carousel-item">
                         <img src="src/slider-image-2.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <div class="carousel-caption d-none d-md-block">
                             <h5>Laboratory Test</h5>
                             <p>Tied up with affordable laboratories</p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="carousel-item">
                         <img src="src/slider-image-3.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <div class="carousel-caption d-none d-md-block">
                             <h5>Consult With Professional Doctors</h5>
                             <p>Highly Qualified Medical Care</p>
-                        </div>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/slider-image-4.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <h5>Consult With Professional Doctors</h5>
+                            <p>Highly Qualified Medical Care</p>
+                        </div> -->
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -102,16 +135,38 @@
         </section>
 
 
-        <!-- <div class="my-2 mx-5 marquee-div">
-            <div class="title">
-                <h5 class="badge text-bg-primary">Upcoming Plans:</h5>
+        <!--OUR MISSION-->
+        <div class="container mt-2 mb-3">
+            <div class="row">
+                <div class="">
+                    <div class="card upcoming-plan">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title">Our Mission</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h6 class="plan-title"></h6>
+                                <p class="plan-description">
+                                    At <b>Shriharsha Healthcare</b>, we lead the way in nutrition, offering tailored
+                                    plans and lifestyle recommendations to support individuals in reaching their health
+                                    objectives. Backed by a team of dedicated professionals, including experienced
+                                    dietitians and doctors, we are committed to empowering clients of all demographics
+                                    with personalized nutrition counseling and unwavering support on their journey to
+                                    optimal wellness.
+                                </p>
+                            </div>
+                            <!-- <div class="plan">
+                                <h6 class="plan-title">Plan 2</h6>
+                                <p class="plan-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    assumenda, aliquam sit ea enim repellendus aspernatur possimus dolor similique eos
+                                    eaque mollitia quos quas quibusdam, magni suscipit, doloremque illum ratione!</p>
+                            </div> -->
+                            <!-- Add more missions as needed -->
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="marquee-div">
-                <pre
-                    class="marquee-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In assumenda, aliquam sit ea enim repellendus aspernatur possimus dolor similique eos eaque mollitia quos quas quibusdam, magni suscipit, doloremque illum ratione!</pre>
-            </div>
-        </div> -->
+        </div>
 
         <hr class=" my-4 featurette-divider mx-5" id="services-section">
 
@@ -127,8 +182,9 @@
                             <strong class="d-inline-block mb-2 text-primary-emphasis">Services</strong>
                             <h3 class="mb-0">Dietitian Consult</h3>
 
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                lead-in to additional content.</p>
+                            <p class="card-text mb-auto">Unlock your path to a healthier, happier you with personalized
+                                guidance from our expert dietitians. Let's transform your relationship with food and
+                                achieve your wellness goals together.</p>
                             <a href="/form.html" class="icon-link gap-1 icon-link-hover stretched-link">
                                 Intrested?
                             </a>
@@ -148,8 +204,8 @@
                             <strong class="d-inline-block mb-2 text-primary-emphasis">Services</strong>
                             <h3 class="mb-0">Doctor Consult</h3>
 
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                lead-in to additional content.</p>
+                            <p class="card-text mb-auto">Unlock expert medical guidance and personalized care with our
+                                Doctor Consult service – your path to healthier living starts here.</p>
                             <a href="/form.html" class="icon-link gap-1 icon-link-hover stretched-link">
                                 Intrested?
                             </a>
@@ -169,8 +225,9 @@
                             <strong class="d-inline-block mb-2 text-primary-emphasis">Services</strong>
                             <h3 class="mb-0">Laboratory Consult</h3>
 
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                lead-in to additional content.</p>
+                            <p class="card-text mb-auto">Unlock the potential of your research with our Laboratory
+                                Consult: expert guidance tailored to enhance your experiments and maximize scientific
+                                outcomes.</p>
                             <a href="/form.html" class="icon-link gap-1 icon-link-hover stretched-link">
                                 Intrested?
                             </a>
@@ -189,33 +246,31 @@
 
         <!--About-->
         <section class="my-4 mx-2" style="text-align: center;">
-            <h1 class="text-center display-6 bg-light">About Us</h1>
+            <h1 class="text-center display-6 bg-light mb-4">Why Us?</h1>
             <div class="container marketing">
                 <div class=" row featurette d-flex justify-content-center align-items-center my-2">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
-                                class="text-body-secondary">It’ll blow your mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some
-                            exciting
-                            prose here.</p>
+                        <h2 class="featurette-heading fw-normal lh-1">Personalized Approach
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead">Each nutrition plan is meticulously crafted to suit your
+                            individual requirements, ensuring maximum effectiveness and sustainability.</p>
                     </div>
                     <div class="col-md-5">
                         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="400" height="400"
-                            src="https://source.unsplash.com/400x400/?dietitian,medical,healthcare,laboratory"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            width="400" height="400" src="src/aboutus1.jpeg" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
                         </img>
                     </div>
                 </div>
 
                 <div class="row featurette d-flex justify-content-center align-items-center">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
-                                class="text-body-secondary">See for yourself.</span></h2>
-                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
-                            of
-                            how
-                            this layout would work with some actual real-world content in place.</p>
+                        <h2 class="featurette-heading fw-normal lh-1">Expert Guidance
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead">Our team of seasoned nutritionists and wellness experts are committed to
+                            providing you with evidence-based recommendations and ongoing support.</p>
                     </div>
                     <div class="col-md-5 order-md-1">
                         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
@@ -228,12 +283,11 @@
 
                 <div class="row featurette d-flex justify-content-center align-items-center">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
-                                class="text-body-secondary">See for yourself.</span></h2>
-                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
-                            of
-                            how
-                            this layout would work with some actual real-world content in place.</p>
+                        <h2 class="featurette-heading fw-normal lh-1">Holistic Wellness
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead">We believe in addressing health from a holistic perspective, considering factors
+                            beyond just diet to enhance your overall well-being.</p>
                     </div>
                     <div class="col-md-5">
                         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
@@ -244,7 +298,7 @@
                     </div>
                 </div>
 
-                <div class="row featurette d-flex justify-content-center align-items-center">
+                <!-- <div class="row featurette d-flex justify-content-center align-items-center">
                     <div class="col-md-7 order-md-2">
                         <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
                                 class="text-body-secondary">See for yourself.</span></h2>
@@ -260,6 +314,150 @@
                             preserveAspectRatio="xMidYMid slice" focusable="false">
                         </img>
                     </div>
+                </div> -->
+            </div>
+        </section>
+
+        <hr class="my-4 featurette-divider mx-5">
+
+        <!--About-->
+        <section class="my-4 mx-2" style="text-align: center;">
+            <h1 class="text-center display-6 bg-light mb-4">Advisory</h1>
+            <div class="container marketing">
+                <div class=" row featurette d-flex justify-content-center align-items-center my-4">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">Benefits of Olive Pomace Oil
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead fs-6">
+                            Nutritional Excellence: Rich in heart-healthy monounsaturated fats and
+                            antioxidants like vitamin E for overall wellness.
+                            <br>
+                            Extended Shelf Life: Enjoy prolonged freshness due to high stability, ideal for households
+                            and commercial purposes.
+                            <br>
+                            Versatility Unleashed: From cooking to skincare and herbal infusions, its multifaceted
+                            utility enhances daily living.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400" src="src/advisory-1.jpg" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center my-4">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">Enhance Indian Cooking with Olive Pomace Oil
+
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead fs-6">
+                            Heart-Healthy Choice: Rich in monounsaturated fats, supports heart health.<br>
+                            Flavorful and Versatile: Mild taste, high smoke point perfect for various Indian cooking
+                            methods.<br>
+                            Antioxidant-Rich: Contains vitamin E, boosts nutritional value of dishes.<br>
+                            Culinary Flexibility: Ideal for curries, fried snacks, dressings, and more.<br>
+                            Digestive Support: Aids digestion, complements diverse Indian spices.<br>
+                            Elevate your Indian cuisine with the nutritional benefits of olive pomace oil.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400" src="src/advisory-2.jpg" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center my-4">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">Winter Wellness Tips
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead fs-6">
+                            Stay Active: Engage in 20-minute daily exercises like walking or indoor workouts.<br>
+                            Hydrate & Moisturize: Drink water, apply moisturizer to combat dry skin.<br>
+                            Eat Nutrient-Rich Foods: Include seasonal fruits, veggies, protein, and omega-3 sources.<br>
+                            Hydration: Drink water to stay hydrated and flush out toxins.<br>
+                            Sunlight & Vitamin D: Aim for 30-40 minutes of sunlight exposure for overall health.<br>
+                            Tulsi Honey Tea: Boost immunity with tulsi and honey to prevent winter ailments.<br>
+                            Stay healthy and vibrant throughout the season with these habits.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400" src="src/advisory-3.jpg" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center my-4">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">Importance of Dietary Fibers
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead fs-6">
+                            Vital for gut health, weight management, and cholesterol regulation.<br>
+                            Aim for 21-25g (women) or 30-38g (men) of fiber daily.<br>
+                            Sources include oats, beans, fruits, veggies, and whole grains.<br>
+                            Soluble fibers trap sugars and cholesterol, while insoluble fibers aid bowel movements.<br>
+                            Benefits extend to blood sugar control, disease prevention, and overall well-being.<br>
+                            Incorporate fiber-rich foods gradually for optimal results. Prioritize whole grains,<br>
+                            veggies, and legumes for a balanced diet and improved health.
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400" src="src/advisory-4.jpg" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center my-4">
+                    <div class="col-md-7 order-md-1">
+                        <h2 class="featurette-heading fw-normal lh-1">Embrace Mindful Eating
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead fs-6">
+                            Cultivate awareness during meals for a balanced approach.<br>
+                            Tune into hunger and fullness cues for intuitive eating.<br>
+                            Savor flavors and textures, fostering gratitude for nourishment.<br>
+                            Make mindful food choices for overall health and well-being.<br>
+                            By practicing mindfulness, enhance your relationship with food, reduce stress eating, and
+                            find satisfaction in every meal.
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-2">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400" src="src/advisory-5.jpg" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        </img>
+                    </div>
+                </div>
+
+                <div class="row featurette d-flex justify-content-center align-items-center my-4">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">Breast Cancer Awareness
+                            <span class="text-body-secondary"></span>
+                        </h2>
+                        <p class="lead fs-6">
+                            Look out for irregular lumps, persistent pain, redness, nipple discharge, or dimpled
+                            skin.<br>
+                            Pay attention to visible veins, swollen lymph nodes, changes in breast size, or inverted
+                            nipples.<br>
+                            Early detection is key for successful treatment.<br>
+                            Promptly seek medical attention if any concerning signs appear.<br>
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="400" height="400" src="src/advisory-6.jpg" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+                        </img>
+                    </div>
                 </div>
             </div>
         </section>
@@ -272,24 +470,25 @@
         <div class="container my-4">
             <div class="row">
                 <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
-                    <img class="bd-placeholder-img rounded-circle" src="src/doctor-1.jpg" width="140" height="140"
+                    <img class="bd-placeholder-img rounded-circle" src="src/dietitian-1.jpg" width="140" height="140"
                         focusable="false">
                     </img>
-                    <h2 class="fw-normal">Heading</h2>
-                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
-                        fuga, praesentium dicta nulla cumque ad minima unde cupiditate, vero deserunt eos aliquid
-                        nobis pariatur quam quasi iste reprehenderit sequi quaerat!</p>
+                    <h2 class="fw-normal">Suresh Prajapati</h2>
+                    <p class="text-center"><b>Qual: </b>B.Sc Zoology, M.Sc DFSM, CFN <br>
+                        <b>Exp: </b>1 Year of Oriana Hospital Varanasi
+                    </p>
                 </div>
                 <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
-                    <img class="bd-placeholder-img rounded-circle" src="src/doctor-2.jpg" width="140" height="140"
+                    <img class="bd-placeholder-img rounded-circle" src="src/dietitian-2.jpg" width="140" height="140"
                         focusable="false">
                     </img>
-                    <h2 class="fw-normal">Heading</h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
-                        corporis non pariatur quam doloribus omnis inventore magni odit autem quaerat ducimus
-                        cupiditate, repellendus error corrupti velit saepe eligendi et deserunt?</p>
+                    <h2 class="fw-normal">Pradeep Kr. Vishwakarma</h2>
+                    <p class="text-center"><b>Qual: </b>B.Sc Zoology, M.Sc DFSM <br>
+                        <b>Exp: </b>2 Years Shubham Hospital Varanasi as a Chief Dietitian, 1 Year Neurological Center
+                        as a chief dietitian
+                    </p>
                 </div>
-                <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                <!-- <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
                     <img class="bd-placeholder-img rounded-circle" src="src/doctor-3.jpg" width="140" height="140"
                         focusable="false">
                     </img>
@@ -306,7 +505,7 @@
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam nobis
                         aspernatur deserunt laboriosam fuga alias molestias placeat accusamus officia excepturi nisi
                         qui aut, blanditiis itaque beatae sed. Rem, fugiat!</p>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- </section> -->
@@ -322,12 +521,14 @@
                         <img class="bd-placeholder-img rounded-circle" src="src/doctor-1.jpg" width="140" height="140"
                             focusable="false">
                         </img>
-                        <h2 class="fw-normal">Heading</h2>
-                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
-                            fuga, praesentium dicta nulla cumque ad minima unde cupiditate, vero deserunt eos aliquid
-                            nobis pariatur quam quasi iste reprehenderit sequi quaerat!</p>
+                        <h2 class="fw-normal">Dr. Sandeep Kr. Singh</h2>
+                        <p class="text-center">General Physician
+                            M.B.B.S I.M.S. BHU <br>
+                            <b>Exp:</b> 2 Years M.O S.S.P.G. Kambirchaura Varanasi, 1 Year Internship Sir Sunder lal
+                            hospital bhu, 2 Years M.O PHC Mamhar Bhadohi
+                        </p>
                     </div>
-                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                    <!-- <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
                         <img class="bd-placeholder-img rounded-circle" src="src/doctor-2.jpg" width="140" height="140"
                             focusable="false">
                         </img>
@@ -335,8 +536,8 @@
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
                             corporis non pariatur quam doloribus omnis inventore magni odit autem quaerat ducimus
                             cupiditate, repellendus error corrupti velit saepe eligendi et deserunt?</p>
-                    </div>
-                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                    </div> -->
+                    <!-- <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
                         <img class="bd-placeholder-img rounded-circle" src="src/doctor-3.jpg" width="140" height="140"
                             focusable="false">
                         </img>
@@ -344,7 +545,7 @@
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam nobis
                             aspernatur deserunt laboriosam fuga alias molestias placeat accusamus officia excepturi nisi
                             qui aut, blanditiis itaque beatae sed. Rem, fugiat!</p>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -358,15 +559,15 @@
             <div class="container my-4">
                 <div class="row">
                     <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
-                        <img class="bd-placeholder-img rounded-circle" src="src/doctor-1.jpg" width="140" height="140"
+                        <img class="bd-placeholder-img rounded-circle" src="src/lab-1.jpg" width="140" height="140"
                             focusable="false">
                         </img>
-                        <h2 class="fw-normal">Heading</h2>
-                        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
-                            fuga, praesentium dicta nulla cumque ad minima unde cupiditate, vero deserunt eos aliquid
-                            nobis pariatur quam quasi iste reprehenderit sequi quaerat!</p>
+                        <h2 class="fw-normal">Vikas Gupta</h2>
+                        <p class="text-center"><b>Qual:</b> DMLT, B.Sc Zoology, M.Sc Biochemistry, CPLT <br>
+                            <b>Exp: </b>10 Years in Ayush Pathology
+                        </p>
                     </div>
-                    <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
+                    <!-- <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center generalPadding">
                         <img class="bd-placeholder-img rounded-circle" src="src/doctor-2.jpg" width="140" height="140"
                             focusable="false">
                         </img>
@@ -383,7 +584,7 @@
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam nobis
                             aspernatur deserunt laboriosam fuga alias molestias placeat accusamus officia excepturi nisi
                             qui aut, blanditiis itaque beatae sed. Rem, fugiat!</p>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -416,10 +617,10 @@
             </div>
         </section> -->
 
-        <hr class="my-4 featurette-divider mx-5">
+        <!-- <hr class="my-4 featurette-divider mx-5"> -->
 
         <!--UPCOMING PLANS-->
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="">
                     <div class="card upcoming-plan">
@@ -440,11 +641,11 @@
                                     eaque mollitia quos quas quibusdam, magni suscipit, doloremque illum ratione!</p>
                             </div>
                             <!-- Add more plans as needed -->
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        </div>
+        </div>
+        </div>
+        </div> -->
 
         <hr class="my-4 featurette-divider mx-5">
 

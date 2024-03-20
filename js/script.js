@@ -58,6 +58,17 @@ function sendEmail(form) {
         toEmailAddress += `,${OFFICIAL_LAB_MAIL}`;
     }
 
+    let isLabSelected = "No";
+    if (isLabService.checked) {
+        isLabSelected = "Yes";
+    }
+
+    let isDoctorSelected = "No";
+    if (isDoctorService.checked) {
+        isDoctorSelected = "Yes";
+    }
+
+
     const body =
         `
         Full Name : ${firstName.value} ${lastName.value}<br>
@@ -70,8 +81,8 @@ function sendEmail(form) {
         Height : ${height.value}<br>
         Weight : ${weight.value}<br>
         Selected Diet Plan : ${dietPlan.value}<br>
-        Doctor Service : ${isDoctorService.checked}<br>
-        Laboratory Service : ${isLabService.checked}<br>
+        Doctor Service : ${isDoctorSelected}<br>
+        Laboratory Service : ${isLabSelected}<br>
         Message : ${message.value}<br>
         `;
 
