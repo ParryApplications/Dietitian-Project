@@ -1,3 +1,5 @@
+<!-- https://source.unsplash.com/1400x400/?dietitian -->
+
 <!doctype html>
 <html lang="en">
 
@@ -72,9 +74,12 @@
         <div class="py-5 text-center">
             <!-- <img class="d-block mx-auto mb-4 rounded-circle" src="/src/app-logo.jpg" alt="" width="72" height="57"> -->
             <h2>Get in Touch</h2>
-            <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form
-                group
-                has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+            <p class="lead">Ready to take charge of your health and wellness? Dive into our simple yet comprehensive
+                form and pave the way for a journey towards optimal well-being. By providing us with a few key details,
+                you'll unlock a treasure trove of personalized recommendations tailored just for you. From dietary
+                preferences to lifestyle goals, our dedicated team is here to empower you on your path to vitality and
+                balance. Don't wait any longer – seize the opportunity to invest in your health today and embark on a
+                transformative adventure towards a brighter, healthier tomorrow!</p>
 
         </div>
     </div>
@@ -156,7 +161,7 @@
                     <hr class="my-4">
 
                     <h4 class="mb-3">Information for Medical guidence</h4>
-                    <!--TODO: Add More Fields-->
+                    <!--Add More Fields-->
                     <div class="row g-3">
                         <div class="col-md-3">
                             <label for="height" class="form-label">Height (in Centemeters)</label>
@@ -168,7 +173,7 @@
                             <input type="number" class="form-control" id="weight" placeholder="66">
                         </div>
 
-                        <!--TODO: Show this dropdown only if user selects for dietplan-->
+                        <!--Show this dropdown only if user selects for dietplan-->
                         <div class="col-md-5">
                             <label for="diet-plan-dropdown" class="form-label">Diet Plans</label>
                             <select class="form-select" id="diet-plan-dropdown">
@@ -225,8 +230,30 @@
                         <div class="progress-bar progress-bar-striped bg-info" style="width: 70%"></div>
                     </div>
 
-                    <button id="form-submit-button" class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+                    <button id="form-submit-button" type="submit" class="w-100 btn btn-primary btn-lg "
+                        data-bs-toggle="modal" data-bs-target="#qrModalWindow">Submit</button>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!--QR MODAL (POP-UP)-->
+    <div class="modal fade" id="qrModalWindow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Want To Pay?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="src/qrCode.png" class="img-fluid mx-auto d-block" width="140" height="140"
+                        focusable="false">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No Thanks</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+                </div>
             </div>
         </div>
     </div>
@@ -243,14 +270,15 @@
 
             <div class="container mx-auto  px-5 text-center">
                 <p class="text-gray-500 text-sm text-center sm:text-left"
-                    style="font-family: 'Merriweather', serif; font-weight:bolder; color: gray" ;> Copyright
+                    style="font-family: 'Merriweather', serif; font-weight:bolder; color: gray; font-size: 13px;">
+                    Copyright
                     Since &copy;
                     2024, <a style="text-decoration:none; color: gray; font-weight: bolder;color:gray">ShriHarsha
                         Healthcare
                     </a>
-                    <!-- <a href="https://www.linkedin.com/in/paras-bhatt-4911a8181/" style="text-decoration:none"
-                      rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank" style="font-family: 'Merriweather', serif;">@Paras Bhatt </a> -->
-
+                    <a href="https://www.linkedin.com/in/paras-bhatt-4911a8181/" style="text-decoration:none"
+                        rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"
+                        style="font-family: 'Merriweather', serif;">@Paras Bhatt </a>
 
                     <br> <B style="color: gray;">ALL RIGHTS RESERVED </B>| <a class="privacy"
                         href="privacypolicy.html">PRIVACY POLICY</a>
@@ -265,6 +293,32 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+
+    <!--Form Validation-->
+    <script>
+        // Function to check if all mandatory fields are filled
+        function checkMandatoryFields() {
+            // Get all mandatory fields
+            const mandatoryFields = document.querySelectorAll('[required]');
+
+            // Check if all mandatory fields are filled
+            const allFilled = Array.from(mandatoryFields).every(field => field.value.trim() !== '');
+
+            // Enable or disable the submit button based on the result
+            const submitButton = document.getElementById('form-submit-button');
+            submitButton.disabled = !allFilled;
+        }
+
+        // Add event listeners to all form fields to check for changes
+        const formFields = document.querySelectorAll('input, select, textarea');
+        formFields.forEach(field => {
+            field.addEventListener('input', checkMandatoryFields);
+        });
+
+        // Initially check if all mandatory fields are filled when the page loads
+        checkMandatoryFields();
+    </script>
+
 </body>
 
 </html>

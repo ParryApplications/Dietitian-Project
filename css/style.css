@@ -6,6 +6,11 @@ html {
     scroll-padding-top: var(--scroll-padding, 10px);
 }
 
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* .headings {
     font-weight: 400;
     font-style: normal;
