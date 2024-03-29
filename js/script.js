@@ -100,6 +100,7 @@ function sendEmail(form) {
             // Show success alert if form is valid and submit it (generate email)
             successFormAlert.classList.remove('hidden');
             formProgressBar.classList.add("hidden");
+            alert("Form Submitted Successfully, Will Reach you within 24 hours");
         } else {
             // Show error message
             console.error(message);
