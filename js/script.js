@@ -44,7 +44,12 @@ Array.prototype.forEach.call(forms, function (form) {
             form.classList.add('was-validated');
         } else {
             form.classList.remove('was-validated');
+            formProgressBar.classList.remove("d-none");
+            formProgressBar.classList.remove("d-md-block");
             formProgressBar.classList.remove("hidden");
+
+            successFormAlert.classList.add("d-none");
+            successFormAlert.classList.add("d-md-block");
             successFormAlert.classList.add("hidden");
             sendEmail(form);
         }
@@ -98,8 +103,13 @@ function sendEmail(form) {
     }).then(function (message) {
         if (message === "OK") {
             // Show success alert if form is valid and submit it (generate email)
-            successFormAlert.classList.remove('hidden');
+            formProgressBar.classList.add("d-none");
+            formProgressBar.classList.add("d-md-block");
             formProgressBar.classList.add("hidden");
+
+            successFormAlert.classList.remove("d-none");
+            successFormAlert.classList.remove("d-md-block");
+            successFormAlert.classList.remove("hidden");
             alert("Form Submitted Successfully, Will Reach you within 24 hours");
         } else {
             // Show error message
