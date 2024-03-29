@@ -6,6 +6,10 @@ html {
     scroll-padding-top: var(--scroll-padding, 10px);
 }
 
+#success-form-alert,
+#form-progress-bar {
+    display: none !important;
+}
 
 p {
     font-family: 'Courier New', Courier, monospace;
@@ -42,10 +46,6 @@ p {
     font-size: 14px;
     line-height: 1.6;
     color: #555;
-}
-
-.hidden {
-    display: none;
 }
 
 /* ==================================
