@@ -22,7 +22,7 @@ const formProgressBar = document.getElementById("form-progress-bar");
 const successFormAlert = document.getElementById('success-form-alert');
 
 //Mail Variables (SMTP -> app.elasticeail.com):
-const OFFICIAL_MAIL = "shriharshahealthcare@gmail.com";//=== UserName 
+const OFFICIAL_MAIL = "shriharshahealthcare@gmail.com,shriharshahealthcareteam@gmail.com";//=== UserName 
 const OFFICIAL_LAB_MAIL = "shriharshalab@gmail.com";
 const SUBJECT = "Regarding ShriHarsha Healthcare Connect";
 const HOST = "smtp.elasticemail.com";
