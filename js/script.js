@@ -117,7 +117,7 @@ function sendEmail(form) {
             successFormAlert.classList.remove("d-none");
             // successFormAlert.classList.remove("d-md-block");
             successFormAlert.classList.remove("hidden");
-            alert("Form Submitted Successfully, Will Reach you within 24 hours");
+            // alert("Form Submitted Successfully, Will Reach you within 24 hours");
         } else {
             // Show error message
             console.error(message);
